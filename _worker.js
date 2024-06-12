@@ -80,14 +80,14 @@ export default {
               },
             })
           }
-          //   case `/bestip/${userID_Path}`: {
-          //     const headers = request.headers
-          //     const url = `https://sub.xf.free.hr/auto?host=${request.headers.get(
-          //       'Host'
-          //     )}&uuid=${userID}&path=/`
-          //     const bestSubConfig = await fetch(url, { headers: headers })
-          //     return bestSubConfig
-          //   }
+          case `/bestip/${userID_Path}`: {
+            const headers = request.headers
+            const url = `https://sub.xf.free.hr/auto?host=${request.headers.get(
+              'Host'
+            )}&uuid=${userID}&path=/`
+            const bestSubConfig = await fetch(url, { headers: headers })
+            return bestSubConfig
+          }
           default:
             // return new Response('Not found', { status: 404 });
             // For any other path, reverse proxy to 'ramdom website' and return the original response, caching it in the process
