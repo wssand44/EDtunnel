@@ -80,7 +80,7 @@ export default {
               },
             })
           }
-          case `/bestip/${userID_Path}`: {
+          case `/bi/${userID_Path}`: {
             const headers = request.headers
             const url = `https://sub.xf.free.hr/auto?host=${request.headers.get(
               'Host'
